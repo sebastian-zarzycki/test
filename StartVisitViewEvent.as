@@ -6,7 +6,7 @@ package com.cognifide.roche.edetailing.view.event
 
 	public class StartVisitViewEvent extends Event
 	{
-		public static const EVENT_TYPE:String = "startNewVisit_viewEvent";
+		public static const EVENT_TYPE:String = "startNewVisit_zmianaTutaj";
 		
 		public var visit:VisitVO;
 		
@@ -18,6 +18,11 @@ package com.cognifide.roche.edetailing.view.event
 		override public function clone():Event {
 			return new StartVisitViewEvent(type, bubbles, cancelable);
 		}
+		
+		override public function dupa():Event {
+			return new StartVisitViewEvent(type, bubbles, cancelable);
+		}
+		
 
 	}
 }
