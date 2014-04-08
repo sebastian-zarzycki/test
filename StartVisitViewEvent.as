@@ -4,7 +4,7 @@ package com.cognifide.roche.edetailing.view.event
 	
 	import flash.events.Event;
 
-	public class StartVisitViewEvent extends Event
+	public class StartVisitViewEventLALALALA extends Event
 	{
 		public static const EVENT_TYPE:String = "startNewVisit_zmianaTutaj";
 		
